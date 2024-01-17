@@ -1,0 +1,17 @@
+<nav class="nav">
+    <h1 routerLink="/home">E-COM</h1>
+    <div class="nav-search">
+        <input type="text" placeholder="Search for Productd" (keyup)="searchProduct($event)" #searchinput>
+        <button (click)="submitSearch(searchinput.value)">Search</button>
+        <ul class="suggested-result" *ngFor="let item of searchitem" >
+            <li>{{item.name}} </li>
+        </ul>
+    </div>
+<ul>
+    <li><a routerLink="/home">Home</a></li>
+    <li><a routerLink="/seller-auth">Seller</a></li>
+    <li><a routerLink="">Login</a></li>
+    <li><a routerLink="">cart</a></li>
+    <li><a routerLink="seller-add-product">Add Item</a></li>
+</ul>
+</nav>

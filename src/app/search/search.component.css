@@ -1,0 +1,13 @@
+.row{
+    display: flex;
+    margin-top: 20px;
+   
+    justify-content: center;
+    align-items: center;
+}
+.upper{
+    margin-bottom: 20px;
+}
+.upper img{
+    width: 217px;
+}
